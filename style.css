@@ -1,0 +1,70 @@
+body{
+
+    display: flex;
+    font-family: 'Comforter Brush', cursive;
+    font-family: 'Montagu Slab', serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Raleway', sans-serif;    
+    font-size: 18px;
+    margin: 1px;
+    justify-content:center;
+    align-items: top;
+    height: 55vh;
+    background-image: url('https://source.unsplash.com/1600x900/?landscape');
+    background-color: rgb(32, 23, 23);
+
+}
+.title{
+
+    font-size: 42px;
+    position: relative;
+    left: 11px;
+    bottom: 18px;
+
+}
+.title_2{
+    font-size: 40px;
+    position: relative;
+    left: 55px;
+    bottom: 20px;
+    
+
+}
+.container{
+    color:black;
+    border: 20px solid black;;
+    background:rgb(117, 132, 121);
+    color: rgb(0, 0, 0);
+    border-radius: 37px;    
+    align-items: center;
+    height: 370px;
+    padding: 7px;
+    opacity: 0.79;
+    bottom: 50px;
+    width: 90%;
+    max-width: 420px;
+    margin: 30px;
+
+}
+.temp{
+    font-size: 24px;
+}
+.main{
+    font-size: 22px;
+}
+.day_1{
+    font-size: 22px;
+    position: relative;
+    left: 0.5cm;
+    bottom: 28px;
+
+}
+.wind_desc{
+    position: relative;
+    left: 165px;
+    top: 10px;
+
+}
+.pressure{
+    top: 25px;
+}
