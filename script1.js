@@ -34,7 +34,7 @@ if(localStorage.when != null
     // No local cache, access network
     } else {
     // Fetch weather data from API for given city
-    fetch('http://localhost:5000/my_api.php')
+    fetch('http://localhost:8000/my_api.php')
     // Convert response string to json object
     .then(response => response.json())
     .then(response => {
@@ -47,13 +47,13 @@ if(localStorage.when != null
     localStorage.mycity=response.city;
     localStorage.mypressure=response.pressure;
     localStorage.myHumidity=response.Humidity;
-    localStorage.mywind_Deg=response.wind_Deg;
+    localStorage.mywind_Deg=response.wind_deg;
     localStorage.myWind=response.weather_wind; 
 
     localStorage.when = Date.now(); // milliseconds since January 1 1970
     })
-    // .catch(err => {
-    // // Display errors in console
-    // console.log(err);
-    // });
+    .catch(err => {
+    // Display errors in console
+    console.log(err);
+    });
 }
